@@ -1,5 +1,3 @@
-version: "3.2"
-
 services:
   mariadb:
     image: mariadb:10
@@ -44,9 +42,9 @@ services:
     links:
       - mariadb
     ports:
-      - "80:80"    
+      - "80:80"
 
-    evolution_api:
+  evolution_api:
     image: atendai/evolution-api:v1.8.5
     container_name: evolution
     hostname: evolution
